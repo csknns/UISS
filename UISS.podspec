@@ -12,11 +12,21 @@ Pod::Spec.new do |s|
 
   s.source   = { :git => 'https://github.com/robertwijas/UISS.git', :tag => "#{s.version}" }
 
-  s.source_files = 'Project/UISS'
   s.resources = 'Project/UISSResources.bundle'
   s.prefix_header_file = 'Project/UISS/UISS-Prefix.pch'
 
   s.frameworks = 'Foundation', 'UIKit'
 
-  s.requires_arc = true
+  s.default_subspec = 'Core'
+
+  s.subspec 'Core' do |core|
+    core.source_files = 'Project/UISS'
+    core.requires_arc = true
+  end
+
+  s.subspec 'Extensions' do |ext|
+    ext.dependency 'UISS/Core'
+    ext.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'UISS_APP_EXTENSIONS' }
+  end
+
 end

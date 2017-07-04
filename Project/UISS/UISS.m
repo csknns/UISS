@@ -176,14 +176,15 @@ NSString *const UISSDidRefreshViewsNotification = @"UISSDidRefreshViewsNotificat
 
 - (void)refreshViews {
     [[NSNotificationCenter defaultCenter] postNotificationName:UISSWillRefreshViewsNotification object:self];
-
+#if !defined(UISS_APP_EXTENSIONS)
+    //This code is not available for app extensions (see today extension)
     for (UIWindow *window in [UIApplication sharedApplication].windows) {
         for (UIView *view in window.subviews) {
             [view removeFromSuperview];
             [window addSubview:view];
         }
     }
-
+#endif
     [[NSNotificationCenter defaultCenter] postNotificationName:UISSDidRefreshViewsNotification object:self];
 }
 
@@ -286,6 +287,8 @@ NSString *const UISSDidRefreshViewsNotification = @"UISSDidRefreshViewsNotificat
 }
 
 - (void)presentConsoleViewController {
+#if !defined(UISS_APP_EXTENSIONS)
+    //This code is not available for app extensions (see today extension)
     UISSConsoleViewController *consoleViewController = [[UISSConsoleViewController alloc] initWithUISS:self];
     consoleViewController.modalPresentationStyle = UIModalPresentationFormSheet;
 
@@ -302,6 +305,7 @@ NSString *const UISSDidRefreshViewsNotification = @"UISSDidRefreshViewsNotificat
     } else {
         [presentingViewController presentViewController:consoleViewController animated:YES completion:nil];
     }
+#endif
 }
 
 @end

@@ -147,6 +147,8 @@
     UISSSettingDescriptor *settingDescriptor = self.settingDescriptors[(NSUInteger) indexPath.section];
 
     if (settingDescriptor.editorType == UISSSettingDescriptorEditorTypeText) {
+#if !defined(UISS_APP_EXTENSIONS)
+        //This code is not available for app extensions (see today extension)
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Change Setting"
                                                             message:settingDescriptor.title
                                                            delegate:self
@@ -160,6 +162,7 @@
         textField.keyboardType = settingDescriptor.keyboardType;
 
         [alertView show];
+#endif
     }
 }
 
