@@ -17,7 +17,12 @@
 
 - (id)init
 {
+#if !defined(UISS_APP_EXTENSIONS)
+    //This code is not available for app extensions (see today extension)
     self = [super initWithFrame:[UIApplication sharedApplication].statusBarFrame];
+#else
+    self = [super initWithFrame:CGRectZero];
+#endif
     self.clipsToBounds = YES;
     self.backgroundColor = [UIColor clearColor];
     if (self) {
@@ -37,9 +42,14 @@
     });
 }
 
-- (void)updateLayout;
+- (void)updateLayout
 {
+#if !defined(UISS_APP_EXTENSIONS)
+    //This code is not available for app extensions (see today extension)
     self.frame = [self frameForOrientation:[UIApplication sharedApplication].statusBarOrientation];
+#else
+    self.frame = [self frameForOrientation:UIInterfaceOrientationUnknown];
+#endif
     self.rootViewController.view.frame = self.bounds;
 }
 
