@@ -7,11 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		097DAF0020FCE4DC0056467D /* libUISS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B438AF143F668000F87518 /* libUISS.a */; };
+		097DAF0620FCE5050056467D /* UISSUIKitEnumsValueConvertersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5EA1563DEF100E93185 /* UISSUIKitEnumsValueConvertersTests.m */; };
+		097DAF0720FCE5080056467D /* UISSControlStateValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BEDF507CA856D0EC5FDF /* UISSControlStateValueConverterTests.m */; };
+		097DAF0820FCE5100056467D /* UISSColorValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E146984A15598AAB000F311F /* UISSColorValueConverterTests.m */; };
+		097DAF0920FCE5100056467D /* UISSImageValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5D31563C38D00E93185 /* UISSImageValueConverterTests.m */; };
+		097DAF0A20FCE5100056467D /* UISSFontValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5D61563CCFB00E93185 /* UISSFontValueConverterTests.m */; };
+		097DAF0B20FCE5100056467D /* UISSTextAttributesValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5D91563D44200E93185 /* UISSTextAttributesValueConverterTests.m */; };
+		097DAF0C20FCE5130056467D /* UISSFloatValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0DB155ABEA00066CCC3 /* UISSFloatValueConverterTests.m */; };
+		097DAF0D20FCE5130056467D /* UISSIntegerValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0DC155ABEA00066CCC3 /* UISSIntegerValueConverterTests.m */; };
+		097DAF0E20FCE5150056467D /* UISSPointValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0D0155ABD770066CCC3 /* UISSPointValueConverterTests.m */; };
+		097DAF0F20FCE5150056467D /* UISSEdgeInsetsValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0C4155AB9940066CCC3 /* UISSEdgeInsetsValueConverterTests.m */; };
+		097DAF1020FCE5150056467D /* UISSOffsetValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0C5155AB9940066CCC3 /* UISSOffsetValueConverterTests.m */; };
+		097DAF1120FCE5150056467D /* UISSRectValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0C6155AB9940066CCC3 /* UISSRectValueConverterTests.m */; };
+		097DAF1220FCE5150056467D /* UISSSizeValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0BA155A9F640066CCC3 /* UISSSizeValueConverterTests.m */; };
+		097DAF1320FCE5180056467D /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = E146982B155846F4000F311F /* example.json */; };
+		097DAF1420FCE51B0056467D /* ExampleJSONTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E146982E15584700000F311F /* ExampleJSONTests.m */; };
+		097DAF1520FCE51B0056467D /* UISSParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1469861155A8B51000F311F /* UISSParserTests.m */; };
+		097DAF1620FCE51B0056467D /* UISSPrivateAppearanceMethodsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F2B9C415814486008EE145 /* UISSPrivateAppearanceMethodsTests.m */; };
+		097DAF1720FCE51B0056467D /* UISSPropertySetterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E145C85B1584B7D40087BB1B /* UISSPropertySetterTests.m */; };
+		097DAF1820FCE51B0056467D /* UISSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E123BD63158BA83A004F8633 /* UISSTests.m */; };
+		097DAF1920FCE5220056467D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1ED8C141450D4E200302B61 /* InfoPlist.strings */; };
+		097DAF1A20FCE54D0056467D /* UISSCodeGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E19B54F315A82070005AFD13 /* UISSCodeGeneratorTests.m */; };
+		097DAF1B20FCE5540056467D /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = E146983915584831000F311F /* black.png */; };
+		097DAF1D20FCE5A80056467D /* UIColor+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BFB8B66546E53D9B8591 /* UIColor+UISS.m */; };
+		097DAF1E20FCE5FC0056467D /* UISSVariablesPreprocessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A775C01567A814000406CC /* UISSVariablesPreprocessorTests.m */; };
+		097DAF1F20FCE5FE0056467D /* UISSUserInterfaceIdiomPreprocessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E19759FE15725C220076674C /* UISSUserInterfaceIdiomPreprocessorTests.m */; };
+		097DAF2020FCE68E0056467D /* UIFont+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B38720F19D0CC0E45FFB /* UIFont+UISS.m */; };
 		C8D2B032C59FD11A701C83C8 /* UISSSettingDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B021E9CB72A0ADBADDEE /* UISSSettingDescriptor.h */; };
 		C8D2B2E56583BF0D585ECFC4 /* UISSSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B93A4CE1D6D274BC9D3D /* UISSSettingsViewController.h */; };
-		C8D2B403B49E791D1C7C7839 /* UIFont+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B38720F19D0CC0E45FFB /* UIFont+UISS.m */; };
 		C8D2B5AED4BB2B1D68E5BA5C /* UISS+GestureRecognizers.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B4CE65CB70FCA36103FD /* UISS+GestureRecognizers.h */; };
-		C8D2B6D7D19B634D46ADF86E /* UISSControlStateValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BEDF507CA856D0EC5FDF /* UISSControlStateValueConverterTests.m */; };
 		C8D2B737075866F8A4B09620 /* UISSImageResizingModeValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B2AB02BB0DD97B7675C3 /* UISSImageResizingModeValueConverter.m */; };
 		C8D2B882971405B0DC662C1C /* UIColor+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BFB8B66546E53D9B8591 /* UIColor+UISS.m */; };
 		C8D2BA939890EB0161165E37 /* UIFont+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B38720F19D0CC0E45FFB /* UIFont+UISS.m */; };
@@ -21,7 +46,6 @@
 		C8D2BDE3D04A0D24CCA2E6B8 /* UISSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BE76126D6B08745F39C2 /* UISSSettingsViewController.m */; };
 		C8D2BEB7BAC6C878B58BC1A9 /* UISSTextAlignmentValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B9582FDA98878B10CBA5 /* UISSTextAlignmentValueConverter.h */; };
 		C8D2BF2ADDB11891AE3310FA /* UISSSettingDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B3AFF5607C8D195A9263 /* UISSSettingDescriptor.m */; };
-		C8D2BF8B489FC38682ED03F5 /* UIColor+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BFB8B66546E53D9B8591 /* UIColor+UISS.m */; };
 		E1076BEA157F6B1A00886759 /* UISSStatusViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1076BE8157F6B1A00886759 /* UISSStatusViewController.h */; };
 		E1076BEB157F6B1A00886759 /* UISSStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1076BE9157F6B1A00886759 /* UISSStatusViewController.m */; };
 		E10D5E551574BBA400185009 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = E10D5E4B1574BBA400185009 /* Icon-72.png */; };
@@ -45,18 +69,13 @@
 		E116C4F2156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E116C4F0156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.h */; };
 		E116C4F3156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E116C4F1156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.m */; };
 		E123BA1E158A38FA004F8633 /* UISSAppearancePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = E123BA1D158A38FA004F8633 /* UISSAppearancePrivate.h */; };
-		E123BD64158BA83B004F8633 /* UISSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E123BD63158BA83A004F8633 /* UISSTests.m */; };
 		E129E5CE1562F86100E93185 /* UISSCustomContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5CD1562F86100E93185 /* UISSCustomContainerView.m */; };
-		E129E5D41563C38D00E93185 /* UISSImageValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5D31563C38D00E93185 /* UISSImageValueConverterTests.m */; };
-		E129E5D71563CCFB00E93185 /* UISSFontValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5D61563CCFB00E93185 /* UISSFontValueConverterTests.m */; };
-		E129E5DA1563D44200E93185 /* UISSTextAttributesValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5D91563D44200E93185 /* UISSTextAttributesValueConverterTests.m */; };
 		E129E5DE1563DE5000E93185 /* UISSBarMetricsValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E129E5DC1563DE5000E93185 /* UISSBarMetricsValueConverter.h */; };
 		E129E5DF1563DE5000E93185 /* UISSBarMetricsValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5DD1563DE5000E93185 /* UISSBarMetricsValueConverter.m */; };
 		E129E5E21563DE7B00E93185 /* UISSControlStateValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E129E5E01563DE7B00E93185 /* UISSControlStateValueConverter.h */; };
 		E129E5E31563DE7B00E93185 /* UISSControlStateValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5E11563DE7B00E93185 /* UISSControlStateValueConverter.m */; };
 		E129E5E61563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E129E5E41563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.h */; };
 		E129E5E71563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5E51563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.m */; };
-		E129E5EB1563DEF100E93185 /* UISSUIKitEnumsValueConvertersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5EA1563DEF100E93185 /* UISSUIKitEnumsValueConvertersTests.m */; };
 		E129E5EE1563F54800E93185 /* UISSAbstractEnumValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E129E5EC1563F54800E93185 /* UISSAbstractEnumValueConverter.h */; };
 		E129E5EF1563F54800E93185 /* UISSAbstractEnumValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5ED1563F54800E93185 /* UISSAbstractEnumValueConverter.m */; };
 		E12C10A8157ACB0C00F9008D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12C10A7157ACB0C00F9008D /* QuartzCore.framework */; };
@@ -64,27 +83,19 @@
 		E12DA0B1155A9D410066CCC3 /* UISSSizeValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0AF155A9D410066CCC3 /* UISSSizeValueConverter.m */; };
 		E12DA0B4155A9D550066CCC3 /* UISSRectValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0B2155A9D550066CCC3 /* UISSRectValueConverter.h */; };
 		E12DA0B5155A9D550066CCC3 /* UISSRectValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0B3155A9D550066CCC3 /* UISSRectValueConverter.m */; };
-		E12DA0BB155A9F640066CCC3 /* UISSSizeValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0BA155A9F640066CCC3 /* UISSSizeValueConverterTests.m */; };
 		E12DA0BE155AB88F0066CCC3 /* UISSEdgeInsetsValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0BC155AB88F0066CCC3 /* UISSEdgeInsetsValueConverter.h */; };
 		E12DA0BF155AB88F0066CCC3 /* UISSEdgeInsetsValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0BD155AB88F0066CCC3 /* UISSEdgeInsetsValueConverter.m */; };
 		E12DA0C2155AB8A50066CCC3 /* UISSOffsetValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0C0155AB8A50066CCC3 /* UISSOffsetValueConverter.h */; };
 		E12DA0C3155AB8A50066CCC3 /* UISSOffsetValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0C1155AB8A50066CCC3 /* UISSOffsetValueConverter.m */; };
-		E12DA0C7155AB9940066CCC3 /* UISSEdgeInsetsValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0C4155AB9940066CCC3 /* UISSEdgeInsetsValueConverterTests.m */; };
-		E12DA0C8155AB9940066CCC3 /* UISSOffsetValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0C5155AB9940066CCC3 /* UISSOffsetValueConverterTests.m */; };
-		E12DA0C9155AB9940066CCC3 /* UISSRectValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0C6155AB9940066CCC3 /* UISSRectValueConverterTests.m */; };
 		E12DA0CD155ABCF40066CCC3 /* UISSPointValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0CB155ABCF30066CCC3 /* UISSPointValueConverter.h */; };
 		E12DA0CE155ABCF40066CCC3 /* UISSPointValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0CC155ABCF40066CCC3 /* UISSPointValueConverter.m */; };
-		E12DA0D1155ABD770066CCC3 /* UISSPointValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0D0155ABD770066CCC3 /* UISSPointValueConverterTests.m */; };
 		E12DA0D5155ABE500066CCC3 /* UISSIntegerValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0D3155ABE500066CCC3 /* UISSIntegerValueConverter.h */; };
 		E12DA0D6155ABE500066CCC3 /* UISSIntegerValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0D4155ABE500066CCC3 /* UISSIntegerValueConverter.m */; };
 		E12DA0D9155ABE5E0066CCC3 /* UISSFloatValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0D7155ABE5E0066CCC3 /* UISSFloatValueConverter.h */; };
 		E12DA0DA155ABE5E0066CCC3 /* UISSFloatValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0D8155ABE5E0066CCC3 /* UISSFloatValueConverter.m */; };
-		E12DA0DD155ABEA00066CCC3 /* UISSFloatValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0DB155ABEA00066CCC3 /* UISSFloatValueConverterTests.m */; };
-		E12DA0DE155ABEA00066CCC3 /* UISSIntegerValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0DC155ABEA00066CCC3 /* UISSIntegerValueConverterTests.m */; };
 		E13B646615890CC800E3613B /* UISSArgumentValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E13B646515890CC800E3613B /* UISSArgumentValueConverter.h */; };
 		E145C8581584AF820087BB1B /* NSString+UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E145C8561584AF820087BB1B /* NSString+UISS.h */; };
 		E145C8591584AF820087BB1B /* NSString+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E145C8571584AF820087BB1B /* NSString+UISS.m */; };
-		E145C85C1584B7D40087BB1B /* UISSPropertySetterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E145C85B1584B7D40087BB1B /* UISSPropertySetterTests.m */; };
 		E145C8631584DCC70087BB1B /* UISSConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E145C8611584DCC70087BB1B /* UISSConfig.h */; };
 		E145C8641584DCC70087BB1B /* UISSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E145C8621584DCC70087BB1B /* UISSConfig.m */; };
 		E14698131558313A000F311F /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = E146980F1558313A000F311F /* first.png */; };
@@ -97,21 +108,16 @@
 		E146982515583E9B000F311F /* UISSDemoFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E146982115583E9B000F311F /* UISSDemoFirstViewController.m */; };
 		E146982615583E9B000F311F /* UISSDemoSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E146982315583E9B000F311F /* UISSDemoSecondViewController.m */; };
 		E146982915583EE0000F311F /* UISSCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = E146982815583EE0000F311F /* UISSCustomView.m */; };
-		E146982C155846F4000F311F /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = E146982B155846F4000F311F /* example.json */; };
-		E146983415584700000F311F /* ExampleJSONTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E146982E15584700000F311F /* ExampleJSONTests.m */; };
-		E146983A15584831000F311F /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = E146983915584831000F311F /* black.png */; };
 		E1469840155905FE000F311F /* UISSColorValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E146983E155905FE000F311F /* UISSColorValueConverter.h */; };
 		E1469841155905FE000F311F /* UISSColorValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E146983F155905FE000F311F /* UISSColorValueConverter.m */; };
 		E146984415590709000F311F /* UISSFontValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E146984215590709000F311F /* UISSFontValueConverter.h */; };
 		E146984515590709000F311F /* UISSFontValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E146984315590709000F311F /* UISSFontValueConverter.m */; };
-		E146984B15598AAB000F311F /* UISSColorValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E146984A15598AAB000F311F /* UISSColorValueConverterTests.m */; };
 		E146984E1559B24C000F311F /* UISSImageValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E146984C1559B24C000F311F /* UISSImageValueConverter.h */; };
 		E146984F1559B24C000F311F /* UISSImageValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E146984D1559B24C000F311F /* UISSImageValueConverter.m */; };
 		E1469852155A6D0E000F311F /* UISSTextAttributesValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E1469850155A6D0E000F311F /* UISSTextAttributesValueConverter.h */; };
 		E1469853155A6D0E000F311F /* UISSTextAttributesValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1469851155A6D0E000F311F /* UISSTextAttributesValueConverter.m */; };
 		E146985A155A85EC000F311F /* UISSParser.h in Headers */ = {isa = PBXBuildFile; fileRef = E1469858155A85EC000F311F /* UISSParser.h */; };
 		E146985B155A85EC000F311F /* UISSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E1469859155A85EC000F311F /* UISSParser.m */; };
-		E1469862155A8B51000F311F /* UISSParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1469861155A8B51000F311F /* UISSParserTests.m */; };
 		E15B384B1572579F005BFF73 /* UISSUserInterfaceIdiomPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E15B38491572579F005BFF73 /* UISSUserInterfaceIdiomPreprocessor.h */; };
 		E15B384C1572579F005BFF73 /* UISSUserInterfaceIdiomPreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B384A1572579F005BFF73 /* UISSUserInterfaceIdiomPreprocessor.m */; };
 		E15B384F157257C3005BFF73 /* UISSDictionaryPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E15B384E157257C3005BFF73 /* UISSDictionaryPreprocessor.h */; };
@@ -123,19 +129,16 @@
 		E18C7C20158F52B1000D45AC /* UISSErrorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E18C7C1E158F52B1000D45AC /* UISSErrorsViewController.m */; };
 		E1914CAF158F99BB00E04977 /* UISSStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = E1914CAD158F99BB00E04977 /* UISSStyle.h */; };
 		E1914CB0158F99BB00E04977 /* UISSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E1914CAE158F99BB00E04977 /* UISSStyle.m */; };
-		E19759FF15725C220076674C /* UISSUserInterfaceIdiomPreprocessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E19759FE15725C220076674C /* UISSUserInterfaceIdiomPreprocessorTests.m */; };
 		E19B54E915A7689D005AFD13 /* UISSParserContext.h in Headers */ = {isa = PBXBuildFile; fileRef = E19B54E715A7689D005AFD13 /* UISSParserContext.h */; };
 		E19B54EA15A7689D005AFD13 /* UISSParserContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E19B54E815A7689D005AFD13 /* UISSParserContext.m */; };
 		E19B54EF15A81F56005AFD13 /* UISSCodeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = E19B54ED15A81F56005AFD13 /* UISSCodeGenerator.h */; };
 		E19B54F015A81F56005AFD13 /* UISSCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E19B54EE15A81F56005AFD13 /* UISSCodeGenerator.m */; };
-		E19B54F415A82070005AFD13 /* UISSCodeGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E19B54F315A82070005AFD13 /* UISSCodeGeneratorTests.m */; };
 		E1A7739815668F80000406CC /* UILabel+UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A7739615668F80000406CC /* UILabel+UISS.h */; };
 		E1A7739915668F80000406CC /* UILabel+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A7739715668F80000406CC /* UILabel+UISS.m */; };
 		E1A775B21566E8D6000406CC /* UISSToolbarPositionValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A775B01566E8D6000406CC /* UISSToolbarPositionValueConverter.h */; };
 		E1A775B31566E8D6000406CC /* UISSToolbarPositionValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A775B11566E8D6000406CC /* UISSToolbarPositionValueConverter.m */; };
 		E1A775BC1567945D000406CC /* UISSVariablesPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A775BA1567945D000406CC /* UISSVariablesPreprocessor.h */; };
 		E1A775BD1567945D000406CC /* UISSVariablesPreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A775BB1567945D000406CC /* UISSVariablesPreprocessor.m */; };
-		E1A775C11567A814000406CC /* UISSVariablesPreprocessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A775C01567A814000406CC /* UISSVariablesPreprocessorTests.m */; };
 		E1AE93B916AC846800E6DF0E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AE93B216AC846800E6DF0E /* Default-568h@2x.png */; };
 		E1AE93BA16AC846800E6DF0E /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AE93B316AC846800E6DF0E /* Default-Landscape.png */; };
 		E1AE93BB16AC846800E6DF0E /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AE93B416AC846800E6DF0E /* Default-Landscape@2x.png */; };
@@ -168,12 +171,7 @@
 		E1ED8BED1450D4E200302B61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1ED8BEC1450D4E200302B61 /* main.m */; };
 		E1ED8BF41450D4E200302B61 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1ED8BF21450D4E200302B61 /* MainStoryboard_iPhone.storyboard */; };
 		E1ED8BF71450D4E200302B61 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1ED8BF51450D4E200302B61 /* MainStoryboard_iPad.storyboard */; };
-		E1ED8C0C1450D4E200302B61 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B438C0143F668000F87518 /* SenTestingKit.framework */; };
-		E1ED8C0D1450D4E200302B61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B43904143F702200F87518 /* UIKit.framework */; };
-		E1ED8C0E1450D4E200302B61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B438B2143F668000F87518 /* Foundation.framework */; };
-		E1ED8C161450D4E200302B61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1ED8C141450D4E200302B61 /* InfoPlist.strings */; };
 		E1ED8C211450D5E600302B61 /* libUISS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B438AF143F668000F87518 /* libUISS.a */; };
-		E1F2B9C515814486008EE145 /* UISSPrivateAppearanceMethodsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F2B9C415814486008EE145 /* UISSPrivateAppearanceMethodsTests.m */; };
 		E1F35EB11593A3F20074389E /* UIView+UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F35EAF1593A3F20074389E /* UIView+UISS.h */; };
 		E1F35EB21593A3F20074389E /* UIView+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F35EB01593A3F20074389E /* UIView+UISS.m */; };
 		E1F48245156259FE00CFA72E /* UISSUIntegerValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F48243156259FE00CFA72E /* UISSUIntegerValueConverter.h */; };
@@ -183,6 +181,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		097DAF0120FCE4DC0056467D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1B438A6143F667F00F87518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1B438AE143F668000F87518;
+			remoteInfo = UISS;
+		};
+		097DAF2720FE43670056467D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1B438A6143F667F00F87518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1ED8BE01450D4E100302B61;
+			remoteInfo = UISSDemo;
+		};
 		E1EA711716CC5B5A00EE20F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E1B438A6143F667F00F87518 /* Project object */;
@@ -190,16 +202,12 @@
 			remoteGlobalIDString = E1B438AE143F668000F87518;
 			remoteInfo = UISS;
 		};
-		E1ED8C0F1450D4E200302B61 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E1B438A6143F667F00F87518 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E1ED8BE01450D4E100302B61;
-			remoteInfo = UISSDemo;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		097DAEFB20FCE4DC0056467D /* UISSDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UISSDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		097DAEFF20FCE4DC0056467D /* UISSDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UISSDemoTests-Info.plist"; sourceTree = "<group>"; };
+		097DAF2120FDF4BF0056467D /* UISSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISSTests.h; sourceTree = "<group>"; };
 		C8D2B021E9CB72A0ADBADDEE /* UISSSettingDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISSSettingDescriptor.h; sourceTree = "<group>"; };
 		C8D2B2AB02BB0DD97B7675C3 /* UISSImageResizingModeValueConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSImageResizingModeValueConverter.m; sourceTree = "<group>"; };
 		C8D2B38720F19D0CC0E45FFB /* UIFont+UISS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+UISS.m"; sourceTree = "<group>"; };
@@ -371,8 +379,6 @@
 		E1ED8BEE1450D4E200302B61 /* UISSDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISSDemo-Prefix.pch"; sourceTree = "<group>"; };
 		E1ED8BF31450D4E200302B61 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		E1ED8BF61450D4E200302B61 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		E1ED8C0B1450D4E200302B61 /* UISSDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UISSDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1ED8C131450D4E200302B61 /* UISSDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UISSDemoTests-Info.plist"; sourceTree = "<group>"; };
 		E1ED8C151450D4E200302B61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E1F2B9C415814486008EE145 /* UISSPrivateAppearanceMethodsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSPrivateAppearanceMethodsTests.m; sourceTree = "<group>"; };
 		E1F35EAF1593A3F20074389E /* UIView+UISS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UISS.h"; sourceTree = "<group>"; };
@@ -384,6 +390,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		097DAEF820FCE4DC0056467D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				097DAF0020FCE4DC0056467D /* libUISS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1B438AC143F668000F87518 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -402,16 +416,6 @@
 				E1ED8BE31450D4E200302B61 /* UIKit.framework in Frameworks */,
 				E1ED8BE41450D4E200302B61 /* Foundation.framework in Frameworks */,
 				E1ED8BE51450D4E200302B61 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E1ED8C071450D4E200302B61 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E1ED8C0C1450D4E200302B61 /* SenTestingKit.framework in Frameworks */,
-				E1ED8C0D1450D4E200302B61 /* UIKit.framework in Frameworks */,
-				E1ED8C0E1450D4E200302B61 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -802,7 +806,7 @@
 			children = (
 				E1B438AF143F668000F87518 /* libUISS.a */,
 				E1ED8BE11450D4E100302B61 /* UISSDemo.app */,
-				E1ED8C0B1450D4E200302B61 /* UISSDemoTests.octest */,
+				097DAEFB20FCE4DC0056467D /* UISSDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -904,6 +908,7 @@
 				E1469861155A8B51000F311F /* UISSParserTests.m */,
 				E1F2B9C415814486008EE145 /* UISSPrivateAppearanceMethodsTests.m */,
 				E145C85B1584B7D40087BB1B /* UISSPropertySetterTests.m */,
+				097DAF2120FDF4BF0056467D /* UISSTests.h */,
 				E123BD63158BA83A004F8633 /* UISSTests.m */,
 			);
 			path = UISSDemoTests;
@@ -913,8 +918,8 @@
 			isa = PBXGroup;
 			children = (
 				E146983815584831000F311F /* Images */,
-				E1ED8C131450D4E200302B61 /* UISSDemoTests-Info.plist */,
 				E1ED8C141450D4E200302B61 /* InfoPlist.strings */,
+				097DAEFF20FCE4DC0056467D /* UISSDemoTests-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -997,6 +1002,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		097DAEFA20FCE4DC0056467D /* UISSDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 097DAF0320FCE4DC0056467D /* Build configuration list for PBXNativeTarget "UISSDemoTests" */;
+			buildPhases = (
+				097DAEF720FCE4DC0056467D /* Sources */,
+				097DAEF820FCE4DC0056467D /* Frameworks */,
+				097DAEF920FCE4DC0056467D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				097DAF0220FCE4DC0056467D /* PBXTargetDependency */,
+				097DAF2820FE43670056467D /* PBXTargetDependency */,
+			);
+			name = UISSDemoTests;
+			productName = UISSDemoTests;
+			productReference = 097DAEFB20FCE4DC0056467D /* UISSDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E1B438AE143F668000F87518 /* UISS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1B438D3143F668000F87518 /* Build configuration list for PBXNativeTarget "UISS" */;
@@ -1032,25 +1056,6 @@
 			productReference = E1ED8BE11450D4E100302B61 /* UISSDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E1ED8C0A1450D4E200302B61 /* UISSDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E1ED8C1D1450D4E200302B61 /* Build configuration list for PBXNativeTarget "UISSDemoTests" */;
-			buildPhases = (
-				E1ED8C061450D4E200302B61 /* Sources */,
-				E1ED8C071450D4E200302B61 /* Frameworks */,
-				E1ED8C081450D4E200302B61 /* Resources */,
-				E1ED8C091450D4E200302B61 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E1ED8C101450D4E200302B61 /* PBXTargetDependency */,
-			);
-			name = UISSDemoTests;
-			productName = UISSDemoTests;
-			productReference = E1ED8C0B1450D4E200302B61 /* UISSDemoTests.octest */;
-			productType = "com.apple.product-type.bundle.ocunit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1058,8 +1063,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastTestingUpgradeCheck = 0700;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = 57things;
+				TargetAttributes = {
+					097DAEFA20FCE4DC0056467D = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Manual;
+						TestTargetID = E1ED8BE01450D4E100302B61;
+					};
+				};
 			};
 			buildConfigurationList = E1B438A9143F667F00F87518 /* Build configuration list for PBXProject "UISS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1075,12 +1087,22 @@
 			targets = (
 				E1B438AE143F668000F87518 /* UISS */,
 				E1ED8BE01450D4E100302B61 /* UISSDemo */,
-				E1ED8C0A1450D4E200302B61 /* UISSDemoTests */,
+				097DAEFA20FCE4DC0056467D /* UISSDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		097DAEF920FCE4DC0056467D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				097DAF1320FCE5180056467D /* example.json in Resources */,
+				097DAF1920FCE5220056467D /* InfoPlist.strings in Resources */,
+				097DAF1B20FCE5540056467D /* black.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1ED8BDF1450D4E100302B61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1120,35 +1142,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E1ED8C081450D4E200302B61 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E1ED8C161450D4E200302B61 /* InfoPlist.strings in Resources */,
-				E146982C155846F4000F311F /* example.json in Resources */,
-				E146983A15584831000F311F /* black.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		E1ED8C091450D4E200302B61 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
+/* Begin PBXSourcesBuildPhase section */
+		097DAEF720FCE4DC0056467D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
+				097DAF1520FCE51B0056467D /* UISSParserTests.m in Sources */,
+				097DAF1120FCE5150056467D /* UISSRectValueConverterTests.m in Sources */,
+				097DAF1D20FCE5A80056467D /* UIColor+UISS.m in Sources */,
+				097DAF0820FCE5100056467D /* UISSColorValueConverterTests.m in Sources */,
+				097DAF2020FCE68E0056467D /* UIFont+UISS.m in Sources */,
+				097DAF0F20FCE5150056467D /* UISSEdgeInsetsValueConverterTests.m in Sources */,
+				097DAF1A20FCE54D0056467D /* UISSCodeGeneratorTests.m in Sources */,
+				097DAF0A20FCE5100056467D /* UISSFontValueConverterTests.m in Sources */,
+				097DAF1620FCE51B0056467D /* UISSPrivateAppearanceMethodsTests.m in Sources */,
+				097DAF0B20FCE5100056467D /* UISSTextAttributesValueConverterTests.m in Sources */,
+				097DAF1F20FCE5FE0056467D /* UISSUserInterfaceIdiomPreprocessorTests.m in Sources */,
+				097DAF0C20FCE5130056467D /* UISSFloatValueConverterTests.m in Sources */,
+				097DAF1420FCE51B0056467D /* ExampleJSONTests.m in Sources */,
+				097DAF1720FCE51B0056467D /* UISSPropertySetterTests.m in Sources */,
+				097DAF1E20FCE5FC0056467D /* UISSVariablesPreprocessorTests.m in Sources */,
+				097DAF1020FCE5150056467D /* UISSOffsetValueConverterTests.m in Sources */,
+				097DAF1820FCE51B0056467D /* UISSTests.m in Sources */,
+				097DAF0620FCE5050056467D /* UISSUIKitEnumsValueConvertersTests.m in Sources */,
+				097DAF0E20FCE5150056467D /* UISSPointValueConverterTests.m in Sources */,
+				097DAF1220FCE5150056467D /* UISSSizeValueConverterTests.m in Sources */,
+				097DAF0D20FCE5130056467D /* UISSIntegerValueConverterTests.m in Sources */,
+				097DAF0920FCE5100056467D /* UISSImageValueConverterTests.m in Sources */,
+				097DAF0720FCE5080056467D /* UISSControlStateValueConverterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
 		E1B438AB143F668000F87518 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1218,48 +1244,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E1ED8C061450D4E200302B61 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E146983415584700000F311F /* ExampleJSONTests.m in Sources */,
-				E146984B15598AAB000F311F /* UISSColorValueConverterTests.m in Sources */,
-				E1469862155A8B51000F311F /* UISSParserTests.m in Sources */,
-				E12DA0BB155A9F640066CCC3 /* UISSSizeValueConverterTests.m in Sources */,
-				E12DA0C7155AB9940066CCC3 /* UISSEdgeInsetsValueConverterTests.m in Sources */,
-				E12DA0C8155AB9940066CCC3 /* UISSOffsetValueConverterTests.m in Sources */,
-				E12DA0C9155AB9940066CCC3 /* UISSRectValueConverterTests.m in Sources */,
-				E12DA0D1155ABD770066CCC3 /* UISSPointValueConverterTests.m in Sources */,
-				E12DA0DD155ABEA00066CCC3 /* UISSFloatValueConverterTests.m in Sources */,
-				E12DA0DE155ABEA00066CCC3 /* UISSIntegerValueConverterTests.m in Sources */,
-				E129E5D41563C38D00E93185 /* UISSImageValueConverterTests.m in Sources */,
-				E129E5D71563CCFB00E93185 /* UISSFontValueConverterTests.m in Sources */,
-				E129E5DA1563D44200E93185 /* UISSTextAttributesValueConverterTests.m in Sources */,
-				E129E5EB1563DEF100E93185 /* UISSUIKitEnumsValueConvertersTests.m in Sources */,
-				E1A775C11567A814000406CC /* UISSVariablesPreprocessorTests.m in Sources */,
-				E19759FF15725C220076674C /* UISSUserInterfaceIdiomPreprocessorTests.m in Sources */,
-				E1F2B9C515814486008EE145 /* UISSPrivateAppearanceMethodsTests.m in Sources */,
-				E145C85C1584B7D40087BB1B /* UISSPropertySetterTests.m in Sources */,
-				E123BD64158BA83B004F8633 /* UISSTests.m in Sources */,
-				E19B54F415A82070005AFD13 /* UISSCodeGeneratorTests.m in Sources */,
-				C8D2B6D7D19B634D46ADF86E /* UISSControlStateValueConverterTests.m in Sources */,
-				C8D2BF8B489FC38682ED03F5 /* UIColor+UISS.m in Sources */,
-				C8D2B403B49E791D1C7C7839 /* UIFont+UISS.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		097DAF0220FCE4DC0056467D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1B438AE143F668000F87518 /* UISS */;
+			targetProxy = 097DAF0120FCE4DC0056467D /* PBXContainerItemProxy */;
+		};
+		097DAF2820FE43670056467D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1ED8BE01450D4E100302B61 /* UISSDemo */;
+			targetProxy = 097DAF2720FE43670056467D /* PBXContainerItemProxy */;
+		};
 		E1EA711816CC5B5A00EE20F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E1B438AE143F668000F87518 /* UISS */;
 			targetProxy = E1EA711716CC5B5A00EE20F9 /* PBXContainerItemProxy */;
-		};
-		E1ED8C101450D4E200302B61 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E1ED8BE01450D4E100302B61 /* UISSDemo */;
-			targetProxy = E1ED8C0F1450D4E200302B61 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1299,19 +1300,98 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		097DAF0420FCE4DC0056467D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "UISSDemoTests/UISSDemoTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertwijas.UISSDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UISSDemo.app/UISSDemo";
+			};
+			name = Debug;
+		};
+		097DAF0520FCE4DC0056467D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "UISSDemoTests/UISSDemoTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertwijas.UISSDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UISSDemo.app/UISSDemo";
+			};
+			name = Release;
+		};
 		E1B438D1143F668000F87518 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1319,11 +1399,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -1336,20 +1420,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -1363,10 +1464,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/UISS.dst;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UISS/UISS-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1378,10 +1475,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/UISS.dst;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UISS/UISS-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1397,6 +1490,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UISSDemo/UISSDemo-Prefix.pch";
 				INFOPLIST_FILE = "UISSDemo/UISSDemo-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertwijas.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -1412,49 +1507,25 @@
 				GCC_PREFIX_HEADER = "UISSDemo/UISSDemo-Prefix.pch";
 				INFOPLIST_FILE = "UISSDemo/UISSDemo-Info.plist";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertwijas.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		E1ED8C1E1450D4E200302B61 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UISSDemo.app/UISSDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UISSDemo/UISSDemo-Prefix.pch";
-				INFOPLIST_FILE = "UISSDemoTests/UISSDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		E1ED8C1F1450D4E200302B61 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UISSDemo.app/UISSDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UISSDemo/UISSDemo-Prefix.pch";
-				INFOPLIST_FILE = "UISSDemoTests/UISSDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		097DAF0320FCE4DC0056467D /* Build configuration list for PBXNativeTarget "UISSDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				097DAF0420FCE4DC0056467D /* Debug */,
+				097DAF0520FCE4DC0056467D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E1B438A9143F667F00F87518 /* Build configuration list for PBXProject "UISS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1478,15 +1549,6 @@
 			buildConfigurations = (
 				E1ED8C1B1450D4E200302B61 /* Debug */,
 				E1ED8C1C1450D4E200302B61 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E1ED8C1D1450D4E200302B61 /* Build configuration list for PBXNativeTarget "UISSDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E1ED8C1E1450D4E200302B61 /* Debug */,
-				E1ED8C1F1450D4E200302B61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
