@@ -23,10 +23,10 @@
 
 - (void)testOffsetAsArray; {
     [self testValue:@[@1.0f, @2.0f]
-     expectedOffset:UIOffsetMake(1, 2) expectedCode:@"UIOffsetMake(1.0, 2.0)"];
+     expectedOffset:UIOffsetMake([@1.0f floatValue], [@2.0f floatValue]) expectedCode:@"UIOffsetMake(1.0, 2.0)"];
 
     [self testValue:@[@1.2f, @2.5f]
-     expectedOffset:UIOffsetMake(1.2, 2.5) expectedCode:@"UIOffsetMake(1.2, 2.5)"];
+     expectedOffset:UIOffsetMake([@1.2f floatValue], [@2.5f floatValue]) expectedCode:@"UIOffsetMake(1.2, 2.5)"];
 }
 
 - (void)testOffsetAsNumber; {

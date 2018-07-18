@@ -170,9 +170,9 @@
 
                 BOOL percentValuesPriority = (red <= 1) && (green <= 1) && (blue <= 1);
 
-                if (red > 1 || (red == 1 && percentValuesPriority == NO)) red /= 255.0f;
-                if (green > 1 || (green == 1 && percentValuesPriority == NO)) green /= 255.0f;
-                if (blue > 1 || (blue == 1 && percentValuesPriority == NO)) blue /= 255.0f;
+                if (red > 1 || (red == 1 && percentValuesPriority == NO)) red = [[NSDecimalNumber decimalNumberWithString:[NSString stringWithFormat:@"%f", red]] decimalNumberByDividingBy:[NSDecimalNumber decimalNumberWithString:@"255"]].floatValue;
+                if (green > 1 || (green == 1 && percentValuesPriority == NO)) green = [[NSDecimalNumber decimalNumberWithString:[NSString stringWithFormat:@"%f", green]] decimalNumberByDividingBy:[NSDecimalNumber decimalNumberWithString:@"255"]].floatValue;
+                if (blue > 1 || (blue == 1 && percentValuesPriority == NO)) blue = [[NSDecimalNumber decimalNumberWithString:[NSString stringWithFormat:@"%f", blue]] decimalNumberByDividingBy:[NSDecimalNumber decimalNumberWithString:@"255"]].floatValue;
             }
 
             return [self colorWithRed:red green:green blue:blue alpha:alpha colorHandler:colorHandler
