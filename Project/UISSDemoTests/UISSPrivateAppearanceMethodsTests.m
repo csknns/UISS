@@ -2,11 +2,11 @@
 // Copyright (c) 2013 Robert Wijas. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import "UISSTests.h"
 #import <objc/runtime.h>
 #import "UISSAppearancePrivate.h"
 
-@interface UISSPrivateAppearanceMethodsTests : SenTestCase
+@interface UISSPrivateAppearanceMethodsTests : XCTestCase
 
 @end
 

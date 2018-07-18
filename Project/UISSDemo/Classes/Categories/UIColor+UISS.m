@@ -4,7 +4,6 @@
 
 #import "UIColor+UISS.h"
 
-
 @implementation UIColor (UISS)
 
 + (UIColor *)uissDemoColor {

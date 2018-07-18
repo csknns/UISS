@@ -4,6 +4,7 @@
 
 #import <Foundation/Foundation.h>
 #import "UISSArgumentValueConverter.h"
+#import <CoreGraphics/CoreGraphics.h>
 
 #define UISS_FLOAT_VALUE_CONVERTER_DEFAULT_PRECISION 1
 

@@ -2,11 +2,12 @@
 // Copyright (c) 2013 Robert Wijas. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import "UISSTests.h"
 #import "UISSColorValueConverter.h"
 #import "UIColor+UISS.h"
+#import "UISSFloatValueConverter.h"
 
-@interface UISSColorValueConverterTests : SenTestCase
+@interface UISSColorValueConverterTests : XCTestCase
 
 @property(nonatomic, strong) UISSColorValueConverter *converter;
 
@@ -16,10 +17,10 @@
 
 - (void)testNull {
     UIColor *color = [self.converter convertValue:[NSNull null]];
-    STAssertNil(color, nil);
+    XCTAssertNil(color);
 
     NSString *code = [self.converter generateCodeForValue:[NSNull null]];
-    STAssertEqualObjects(code, @"nil", nil);
+    XCTAssertEqualObjects(code, @"nil");
 }
 
 - (void)testExactColorSelector {
@@ -99,13 +100,12 @@
     NSString *code = [self.converter generateCodeForValue:value];
 
     if (expectedColor != nil) {
-        STAssertNotNil(color, nil);
+        XCTAssertNotNil(color);
     }
-
     if ([expectedColor isKindOfClass:[NSNull class]] == NO) {
-        STAssertEqualObjects(color, expectedColor, nil);
+        XCTAssertEqualObjects(color, expectedColor);
     }
-    STAssertEqualObjects(code, expectedCode, nil);
+    XCTAssertEqualObjects(code, expectedCode);
 }
 
 - (void)setUp {

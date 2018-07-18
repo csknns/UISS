@@ -2,10 +2,11 @@
 // Copyright (c) 2013 Robert Wijas. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+
+#import "UISSTests.h"
 #import "UISSPropertySetter.h"
 
-@interface UISSPropertySetterTests : SenTestCase
+@interface UISSPropertySetterTests : XCTestCase
 
 @end
 
@@ -19,7 +20,7 @@
     property.name = @"tintColor";
     propertySetter.property = property;
 
-    STAssertEquals(propertySetter.selector, @selector(setTintColor:), nil);
+    UISSAssertEqualSelectors(propertySetter.selector, @selector(setTintColor:));
 }
 
 - (void)testAccessingSelectorWithOneAxisParameter; {
@@ -33,7 +34,7 @@
     UISSAxisParameter *axisParameter = [[UISSAxisParameter alloc] init];
     propertySetter.axisParameters = @[axisParameter];
 
-    STAssertEquals(propertySetter.selector, @selector(setTitleColor:forState:), nil);
+    UISSAssertEqualSelectors(propertySetter.selector, @selector(setTitleColor:forState:));
 }
 
 - (void)testAccessingSelectorWithTwoAxisParameters; {
@@ -49,7 +50,7 @@
 
     propertySetter.axisParameters = @[axisParameter1, axisParameter2];
 
-    STAssertEquals(propertySetter.selector, @selector(setBackgroundImage:forState:barMetrics:), nil);
+    UISSAssertEqualSelectors(propertySetter.selector, @selector(setBackgroundImage:forState:barMetrics:));
 }
 
 - (void)testShouldFailToRecognizeSelectorIfThereAreToManyAxisParameters; {
@@ -65,7 +66,7 @@
 
     propertySetter.axisParameters = @[axisParameter1, axisParameter2];
 
-    STAssertEquals(propertySetter.selector, (SEL) NULL, nil);
+    XCTAssertTrue(propertySetter.selector == NULL);
 }
 
 #pragma mark - Code Generation & Invocations
@@ -80,10 +81,10 @@
 
     propertySetter.property = tintColorProperty;
 
-    STAssertEqualObjects(propertySetter.generatedCode, @"[[UIToolbar appearance] setTintColor:[UIColor whiteColor]];", nil);
+    XCTAssertEqualObjects(propertySetter.generatedCode, @"[[UIToolbar appearance] setTintColor:[UIColor whiteColor]];");
 
     NSInvocation *invocation = propertySetter.invocation;
-    STAssertNotNil(invocation, nil);
+    XCTAssertNotNil(invocation);
 }
 
 - (void)testSimplePropertyWithContainment; {
@@ -97,7 +98,7 @@
 
     propertySetter.property = tintColorProperty;
 
-    STAssertEqualObjects(propertySetter.generatedCode, @"[[UIToolbar appearanceWhenContainedIn:[UIPopoverController class], nil] setTintColor:[UIColor whiteColor]];", nil);
+    XCTAssertEqualObjects(propertySetter.generatedCode, @"[[UIToolbar appearanceWhenContainedIn:[UIPopoverController class], nil] setTintColor:[UIColor whiteColor]];");
 }
 
 - (void)testSimplePropertyWithDeepContainment; {
@@ -111,7 +112,7 @@
 
     propertySetter.property = tintColorProperty;
 
-    STAssertEqualObjects(propertySetter.generatedCode, @"[[UIToolbar appearanceWhenContainedIn:[UIView class], [UIPopoverController class], nil] setTintColor:[UIColor whiteColor]];", nil);
+    XCTAssertEqualObjects(propertySetter.generatedCode, @"[[UIToolbar appearanceWhenContainedIn:[UIView class], [UIPopoverController class], nil] setTintColor:[UIColor whiteColor]];");
 }
 
 - (void)testPropertyWithAxisParameter; {
@@ -128,7 +129,7 @@
     propertySetter.property = tintColorProperty;
     propertySetter.axisParameters = @[axisParameter];
 
-    STAssertEqualObjects(propertySetter.generatedCode, @"[[UIBarButtonItem appearance] setTitlePositionAdjustment:UIOffsetMake(10.0, 10.0) forBarMetrics:UIBarMetricsDefault];", nil);
+    XCTAssertEqualObjects(propertySetter.generatedCode, @"[[UIBarButtonItem appearance] setTitlePositionAdjustment:UIOffsetMake(10.0, 10.0) forBarMetrics:UIBarMetricsDefault];");
 }
 
 @end
