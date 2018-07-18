@@ -1,3 +1,5 @@
-platform :ios, '5.0'
+platform :ios, '8.0'
 
-pod 'UISS', :path => '../..'
+target 'UISSDemo' do
+	pod 'UISS', :path => '../..'
+end

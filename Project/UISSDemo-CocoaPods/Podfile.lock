@@ -1,14 +1,18 @@
 PODS:
-  - UISS (1.1.1)
+  - UISS (1.1.2):
+    - UISS/Core (= 1.1.2)
+  - UISS/Core (1.1.2)
 
 DEPENDENCIES:
   - UISS (from `../..`)
 
 EXTERNAL SOURCES:
   UISS:
-    :path: ../..
+    :path: "../.."
 
 SPEC CHECKSUMS:
-  UISS: 21e28c8c0c2c0bc4634025b8c4484df7ffe6808d
+  UISS: 18c702b914d03c917739108df51d37a7f81d0b08
 
-COCOAPODS: 0.19.1
+PODFILE CHECKSUM: b36ff64810da681ed101ed16cb33c4a62e4d2cb0
+
+COCOAPODS: 1.5.3
